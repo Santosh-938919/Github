@@ -1,0 +1,78 @@
+/* import kya ha google font cdn link*/
+@import url("http://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap");
+*{
+margin: 0;
+padding:0;
+border: none;
+outline: none;
+box-sizing: border-box;
+font-family: "poppins",sans-serif;
+}
+body{
+    display: flex;
+
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0.17rem;
+    color:#fff ;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,286,255);
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+
+
+
+.logo{
+    height:80 ;
+    padding: 16px;
+}
+.menu{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding:irem;
+    margin:8px 0;
+    border-radius: all 0.5s ease-in-out;
+
+}
+.menue li:hover,
+.active
+{
+    background: #e0e0e058;
+}
+.menu a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.menu a span{
+    overflow:hidden;
+
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
