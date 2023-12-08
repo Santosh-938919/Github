@@ -1,3 +1,6 @@
+@import url("http://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap");
+
+
 body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -107,3 +110,16 @@ select
     color: rgb(17, 9, 120);
     padding: 5px;
 }
+
+
+
+.user-info
+{
+    margin: 50%;
+    padding: 50px;
+    
+}
+
+
+
+

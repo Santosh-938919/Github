@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin</title>
     <link rel="stylesheet" href="admin.css">
+   <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/></a>
 </head>
 <body>
     
@@ -12,6 +13,11 @@
         <form>
         <h2>Add New Book</h2>
         <br><br>
+        <div class="user--info">
+            <div class="search--box"></div>
+            <i class="fa fa-solid fa-search"></i>
+            <input type="text"placeholder="search" />
+        </div>
         <label for="text"> Book Name:</label>
         <input type="text" id="search-book" name="search" class="search-bar">
         <br><br>
@@ -43,7 +49,6 @@
             <br><br>
             <label for="text"> Book photo:</label>
             <input type="file" id ="book-photo"name="photo"class="search--photo">
-
             <br><br>
             <button type="submit">submit</button>
             </form>
