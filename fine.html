@@ -1,0 +1,240 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fine</title>
+    <a href="index.html"></a>
+    <a href="issuebook.html"></a>
+    <a href="return.html"></a>
+    <a href="report.html"></a>
+    <a href="fine.html"></a>
+    <a href="profile.html"></a>
+    <link rel="stylesheet" href="style3.css">
+
+</head>
+<body>
+    <h2>FINE</h2>
+    <div class="form-container">
+    <form action="/submit " method="post">
+        
+        
+        <label><b>Book Name:</b></label>
+        <input type="text" name="Book name"placeholder="Enter book name"required>
+        <br><br/>
+        <label><b>Author Name:</b></label>
+        <input type="text" name="author name" placeholder="Enter Author name">
+        <br><br/>
+        <label><b>Issue Date:</b></label>
+        <input type="date"required>
+        <br><br/>
+        
+        <label><b>Return Date:</b></label>
+        <input type="date"required>
+        <br><br/>
+
+        <label><b>
+            Field:
+        </b> Choose your course</label>
+        <Select>
+        <option value="BCA" >BCA</option>
+        <option value="B.TEC" >BTEC</option>
+        <option value="mCA" >MCA</option>
+        <option value="B.Com" >B.Com</option>
+        </Select>
+        <br><br/>
+        <label><b>Book Details:</b></label>
+        <textarea row="3"col="5" placeholder="Give some datails"></textarea>
+        <br><br/>
+
+        <label><b>Excess days: 10 rupees day</b></label>
+        <input type="number" placeholder=" enter your excess days"required>
+        <br><br/>
+        <label><b>Amount:</b></label>
+        <input type="" placeholder="Enter the amount">
+        <br><br/>
+        <button type="submit"><b>Fine submit</b></button>
+        </form>
+        </div>
+        
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+ font-family: Arial, sans-serif;
+ background: linear-gradient(45deg, #fdba61, #ff5acd);
+}
+
+.container {
+ width: 80%;
+ margin: auto;
+ padding: 20px;
+ background-color: #f7f7f7;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+
+.fine-title {
+ font-size: 24px;
+ color: #333;
+ margin-bottom: 10px;
+}
+
+.fine-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-bottom: 20px;
+}
+
+.fine-table th, .fine-table td {
+ border: 1px solid #ddd;
+ padding: 8px;
+ text-align: left;
+}
+
+.fine-table th {
+ background-color: #f2f2f2;
+ font-weight: bold;
+}
+
+.total-amount {
+ font-size: 24px;
+ color: #333;
+ margin-bottom: 10px;
+}
+
+.footer {
+ font-size: 14px;
+ color: #666;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+ <div class="fine-title">Fine Details</div>
+  
+ <table class="fine-table">
+    <tr>
+      <th>Book Name</th>
+      <th>Return Date</th>
+      <th>Fine Amount</th>
+    </tr>
+    <tr>
+      <td>Book 1</td>
+      <td>10-02-2023</td>
+      <td>$5</td>
+    </tr>
+    <tr>
+      <td>Book 2</td>
+      <td>05-02-2023</td>
+      <td>$3</td>
+    </tr>
+ </table>
+  
+ <div class="total-amount">Total Fine Amount: $8</div>
+  
+ <div class="footer">
+    Please make the payment as soon as possible. <br>
+    Contact: +1-234-567-890 or info@library.com <br>
+    Payment Options: Cash, Debit Card, Credit Card, UPI, PayPal, Net Banking
+ </div>
+</div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            margin-top: 5px;
+            width: 300px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(20, 14, 96)93, 179, 245)
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Fine Payment</h2>
+        <form id="fineForm">
+            <label for="memberId">User ID:</label>
+            <input type="text" id="memberId" name="memberId">
+            <br>
+            <label for="fineAmount">Fine Amount:</label>
+            <input type="text" id="fineAmount" name="fineAmount">
+            <br>
+            <button type="submit">Pay Fine</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('fineForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var memberId = document.getElementById('memberId').value;
+            var fineAmount = document.getElementById('fineAmount').value;
+
+            // Implement the logic to check the member ID and pay the fine
+            // This is a sample implementation and you need to replace it with your actual implementation
+            if (memberId && fineAmount) {
+                document.getElementById('result').textContent = 'Fine paid successfully!';
+            } else {
+                document.getElementById('result').textContent = 'Error: Invalid member ID or fine amount!';
+            }
+        });
+    </script>
+</body>
+</html>
+  
+

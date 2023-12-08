@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+       <a href="issuebook.html"></a>
+    <a href="return.html"></a>
+    <a href="report.html"></a>
+    <a href="fine.html"></a>
+    <a href="profile.html"></a>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+        }
+
+        .dashboard {
+            background-color: #c3bdd1;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .dashboard h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 100%;
+        }
+
+        .dashboard-section {
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            padding: 100px;
+            text-align: center;
+            text-decoration: underline;
+
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+
+        }
+
+        .dashboard-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .dashboard-section p {
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        
+
+body {
+    display:grid;
+    padding-top: 4em;
+    padding-inline: 1.5em;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #fdba61, #ff5acd);
+}
+
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 100px;
+    padding-top: .5em;
+    height: 650px;
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+/* 
+.card:hover {
+    height: 450px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+}   */
+
+
+
+
+.imgbox {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 19px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .35);
+}
+
+
+.imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details {
+    padding: 50%;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+
+.card:hover .content .details {
+    transform: translateY(0px);
+}
+
+.card .content .details h2 {
+    font-size: 1.50em;
+    font-weight: 600;
+    color: #302f2f;
+    line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+    max-height: fit-content;
+    font-size: 0.70rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card .content .details .data {
+    text-align: left;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.card .content .details .data span {
+    font-size: 1.2rem;
+    text-align: left;
+    color: #000000;
+    margin-right: .5rem;
+} 
+
+
+</style>
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img src="C:\Users\santo\OneDrive\Pictures\Camera Roll\IMG_20221024_143839.jpg" alt="santosh">
+
+        </div>
+        <div class="dashboard-section">
+            <h2>Account</h2>
+            <p>Account number: 123456789</p>
+            <p>Username: santoshprasad</p>
+            <p>Email: prasad.sant@example.com</p>
+        </div>
+    </div>
+
+</body>
+</html>

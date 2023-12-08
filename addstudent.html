@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #fdba61, #ff5acd);
+        }
+
+        .container {
+            max-width: 450px;
+            margin: 30px auto;
+            background: linear-gradient(90deg, #fdba61, #ff5acd);
+
+        
+            padding: 20px;
+            border-radius: solid rgb(189, 29, 29) 10px;
+            border: solid palevioletred 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            text-decoration: underline;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0099cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            
+        }
+
+        button:hover {
+            background-color: rgb(27, 21, 33);
+        }
+
+        .form-header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .form-footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h2>Add Student</h2>
+        </div>
+        <form>
+            <input type="text" name="studentName" placeholder="Student Name" required>
+            <input type="text" name="studentID" placeholder="Student ID" required>
+            <input type="email" name="studentEmail" placeholder="Student Email" required>
+            <select name="department" required>
+                <option value="">Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+            </select>
+            <button type="submit">Add Student</button>
+        </form>
+        <div class="form-footer">
+            <a href="login.html">Already have an account?</a>
+        </div>
+    </div>
+</body>
+</html> 
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .container {
+            padding: 2rem 0rem;
+        }
+
+        .card-title {
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Library Management System</h1>
+        <h2 class="text-center">Admin Dashboard</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Books</h5>
+                        <p class="card-text">Manage all books related operations.</p>
+                        <a href="#" class="btn btn-primary">Go to Books</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Users</h5>
+                        <p class="card-text">Manage all users related operations.</p>
+                        <a href="#" class="btn btn-primary">Go to Users</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Transactions</h5>
+                        <p class="card-text">Manage all transactions related operations.</p>
+                        <a href="#" class="btn btn-primary">Go to Transactions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

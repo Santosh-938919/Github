@@ -1,0 +1,151 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: url('https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=826&t=st=1699107639~exp=1699108239~hmac=8e97492c361ad66b1571fec3c27339a8b14d69da449a0103caf025da308903d7')no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+
+
+}
+.form-container
+{
+    width: 55%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color:#f5f5f5;
+    box-shadow: 0 8px 32px 0 rgba(0, 0 , 0,0.37);
+    /* -webkit-box-shadow:  0 2px 4px rgba(147, 42, 42, 0.1); */
+    animation: slideIn 0.5s forwards;
+    border:2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 25px;
+    position: relative;
+    background: transparent;
+    background:linear-gradient(35deg,rgba(255,255,255,0.1),rgba(255,255,255,0),rgba(255,200,255,0));
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(25px);
+border-bottom-color:rgba(13, 147, 42, 0.65);
+
+
+
+    
+    
+}
+@keyframes slideIn {
+0%
+{
+    transform: translateY(-100%);
+}
+100%{
+    transform: translate(0);
+}
+
+}
+label{
+    font-display: block;
+    margin-bottom: 5px;
+    padding:5px;
+    color: rgb(13, 8, 1);
+    
+}
+input{
+    width: 100%;
+    padding: 12px 6px;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+    border:4px solid rgb(148, 121, 121);
+    text-align: center;
+    color: blue;
+    border-radius: 20px;
+    border-color: rgba(15, 52 , 85, .1);
+    display: inline-block;
+}
+button[type=submit]{
+
+
+    background-color: #45a050;
+    color:rgb(20, 3, 3);
+    padding: 10px 50px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    margin: 13px;
+    background:linear-gradient(35deg,rgba(255,255,255,0.1),rgba(255,255,255,0),rgba(255,200,255,0));
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease-in-out;
+    border: none;
+ 
+}
+
+button[type=submit]:hover{
+
+    background-color: #45a049;
+
+}
+
+h2{
+    color: rgb(4, 4, 25);
+    text-decoration:underline;
+    background-color: #15ab27;
+   display:inline-block;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 6px;
+   box-shadow: #080b08;
+   background:linear-gradient(35deg,rgba(255,255,255,0.1),rgba(255,255,255,0),rgba(255,200,255,0));
+   backdrop-filter: blur(20px);
+
+
+
+}
+select
+{
+    border-radius: 20px;
+    color: rgb(17, 9, 120);
+    padding: 5px;
+}
+textarea
+{
+    background-color: #c4d7c5;
+    border-radius: 5px;
+    color: rgb(13, 29, 72);
+}
+
+/* 
+ .bubble
+{
+    position: relative;
+    display: flex;
+}
+.bubble span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #288aa0;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow : 0 0 0 10px #4721a19f,0 0 50px #422ebf,0 0 100px #5bb651;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(160s/var(--i));
+} 
+ .bubble span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,0 0 50px #ff2d75,0 0 100px #ff2d75;
+}
+@keyframes animate {
+
+0%
+{
+    transform: translatey(100vh) scale(0);
+}
+100%
+{
+    transform: translatey(-100vh)scale(1);
+}  */
