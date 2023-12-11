@@ -17,18 +17,25 @@ body{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 75px;
+    width: 50px;
     height: 100vh;
     padding: 0.17rem;
     color:#fff ;
     overflow: hidden;
     transition: all 0.5s linear;
     background: rgba(113,99,186,255);
+    /* content-visibility:hidden; */
+    align-items: center;
+    justify-content: center;
 }
 .sidebar:hover{
-    width: 200px;
+    width: 180px;
     transition: 0.1s;
+
+    /* content-visibility:visible; */
+    
 }
+    
 
 
 
@@ -188,5 +195,37 @@ transform: scale(1.2);
 }
 
 
+.imagebox
+{
+    padding: 30px;
+    margin: 50px;
+    justify-content: center;
+    text-align: center;
+    display: flexbox;
+    row-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 0 10px ;
+}
 
-                
+img{
+    display: flexbox;
+    width: 25%;
+    height: 200px;
+    object-fit: cover;
+    padding: 20px;
+    margin:10px;
+    border: 2em black;
+    box-sizing: 25px;
+    cursor: pointer;
+}
+
+.b_a
+{
+    display:inline;
+    justify-content:left;
+    align-items:left;   
+
+}
+
+ 
