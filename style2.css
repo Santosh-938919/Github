@@ -1,11 +1,14 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background: url('https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=826&t=st=1699107639~exp=1699108239~hmac=8e97492c361ad66b1571fec3c27339a8b14d69da449a0103caf025da308903d7')no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
+    background-image: url('https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?cs=srgb&dl=antique-book-book-bindings-1005324.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
     
 
 
@@ -116,36 +119,3 @@ textarea
     border-radius: 5px;
     color: rgb(13, 29, 72);
 }
-
-/* 
- .bubble
-{
-    position: relative;
-    display: flex;
-}
-.bubble span{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: #288aa0;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow : 0 0 0 10px #4721a19f,0 0 50px #422ebf,0 0 100px #5bb651;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(160s/var(--i));
-} 
- .bubble span:nth-child(even)
-{
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,0 0 50px #ff2d75,0 0 100px #ff2d75;
-}
-@keyframes animate {
-
-0%
-{
-    transform: translatey(100vh) scale(0);
-}
-100%
-{
-    transform: translatey(-100vh)scale(1);
-}  */

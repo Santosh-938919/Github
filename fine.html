@@ -58,17 +58,25 @@
         </div>
         
 </body>
-</html> -->
+</html> --> 
 
 
 
 <!DOCTYPE html>
 <html>
 <head>
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <a href="issuebook.html"></a>
+
 <style>
 body {
  font-family: Arial, sans-serif;
- background: linear-gradient(45deg, #fdba61, #ff5acd);
+
+ 
 }
 
 .container {
@@ -117,6 +125,61 @@ body {
 </head>
 <body>
 
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+  <li class="active">
+  <a href="index.html">
+  <i class="fa fa-tachometer"></i>
+  <span>Dashboard</span>
+  </a>
+  </li>
+  <li>
+    <a href="profile.html">
+    <i class="fa fa-user"></i>
+    <span>Profile</span>
+    </a>
+    </li>
+    <li>
+        <a href="issuebook.html">
+        <i class="fa fa-book"></i>
+        <span>Issuebook</span>
+        </a>
+        </li>
+  
+        <li>
+            <a href="return.html">
+            <i class="fa fa-book"></i>
+            <span>Book return</span>
+            </a>
+            </li>
+            <li>
+                <a href="report.html">
+                <i class="fa fa-book"></i>
+                <span>Book report</span>
+                </a>
+                </li>
+        <li>
+            <a href="fine.html">
+         <i class="fa fa-money" aria-hidden="true"></i>
+            <span>fine</span>
+            </a>
+            </li>
+            <li>
+                <a href="setting.html">
+                <i class="fa fa-cog"></i>
+                <span>Setting</span>
+                </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
+                    </a>
+                    </li>
+        </ul>
+    </div>
+
 <div class="container">
  <div class="fine-title">Fine Details</div>
   
@@ -150,6 +213,13 @@ body {
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f2f5;
+             background-image: url('https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?cs=srgb&dl=antique-book-book-bindings-1005324.jpg&fm=jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; 
+           
+
+            
         }
 
         .container {
@@ -202,6 +272,71 @@ body {
             font-weight: bold;
             color: #333;
         }
+
+
+
+        .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 100vh;
+    padding: 0.15rem;
+    color:#fff ;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,186,255);
+}
+.sidebar:hover{
+    width: 200px;
+    transition: 0.1s;
+}
+
+
+
+.logo{
+    height:80 ;
+    padding: 16px;
+}
+.menu{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding:1rem;
+    margin:8px 0;
+    border-radius: all 0.5s ease-in-out;
+
+}
+.menu li:hover,
+active{
+    background: #e0e0e058;
+}
+.menu a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.menu a span{
+    overflow:hidden;
+
+}
+.menu a i{
+    font-size: 1.3rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
+
     </style>
 
     <div class="container">
@@ -237,4 +372,4 @@ body {
 </body>
 </html>
   
-
+ 
