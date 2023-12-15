@@ -11,6 +11,11 @@
     <a href="report.html"></a>
     <a href="fine.html"></a>
     <a href="profile.html"></a>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
 
 
     <style>
@@ -179,11 +184,132 @@ body {
 } 
 
 
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100vh;
+    padding: 0.17rem;
+    color:#fff ;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,186,255);
+}
+.sidebar:hover{
+    width: 200px;
+    transition: 0.1s;
+}
+
+
+
+.logo{
+    height:80 ;
+    padding: 16px;
+}
+.menu{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding:1rem;
+    margin:8px 0;
+    border-radius: all 0.5s ease-in-out;
+
+}
+.menu li:hover,
+active{
+    background: #e0e0e058;
+}
+.menu a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.menu a span{
+    overflow:hidden;
+
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
+
 </style>
 <body>
+
+
+
+
+
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+<li class="active" >
+<a href="index.html">
+<i class="fa fa-tachometer"></i>
+<span>Dashboard</span>
+</a>
+</li>
+<li>
+    <a href="profile.html">
+    <i class="fa fa-user"></i>
+    <span>Profile</span>
+    </a>
+    </li>
+    <li>
+        <a href="issuebook.html">
+        <i class="fa fa-book"></i>
+        <span>Issuebook</span>
+        </a>
+        </li>
+
+        <li>
+            <a href="return.html">
+            <i class="fa fa-book"></i>
+            <span>Book return</span>
+            </a>
+            </li>
+            <li>
+                <a href="report.html">
+                <i class="fa fa-book"></i>
+                <span>Book report</span>
+                </a>
+                </li>
+        <li>
+            <a href="fine.html">
+         <i class="fa fa-money" aria-hidden="true"></i>
+            <span>fine</span>
+            </a>
+            </li>
+            <li>
+                <a href="setting.html">
+                <i class="fa fa-cog"></i>
+                <span>Setting</span>
+                </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
+                    </a>
+                    </li>
+        </ul>
+    </div>
     <div class="card">
         <div class="imgbox">
-            <img src="C:\Users\santo\OneDrive\Pictures\Camera Roll\IMG_20221024_143839.jpg" alt="santosh">
+            <img src="source/Snapchat-1728524468.jpg" alt="santosh">
 
         </div>
         <div class="dashboard-section">

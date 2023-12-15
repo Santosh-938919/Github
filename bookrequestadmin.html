@@ -1,102 +1,71 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Issue Report</title>
-   <link rel="stylesheet"
+    <title>Library Book Request</title>
+
+    <link
+    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    
-
-
     <style>
         body {
             font-family: Arial, sans-serif;
-            /* background:linear-gradient(90deg,#b59696,#74756d,#b2c5a4) */
-            background-image: url("https://th.bing.com/th/id/OIP.h494aYkswqnr8sU2inyzMQHaEK?w=296&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 ");
+            background-image: url("https://www.wipremiertrivia.com/wp-content/uploads/2019/07/Books-Wallpaper.jpg");
             background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
+
+
 
         }
 
         .container {
-            width: 80%;
-            margin: auto;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(136, 22, 22, 0.1);
-            background:linear-gradient(180deg,#c3ff00,#749b91,#7a4158);
-            border: 2px solid black;
-            border-color: #7a4158;
+            background-color: #f0f0f0;
             border-radius: 10px;
         }
 
         h1 {
-            color: #333;
-            text-align: center;
+            font-size: 24px;
             margin-bottom: 20px;
-            text-decoration: underline;
-            
-
         }
 
         label {
             display: block;
-            color: #333;
             margin-bottom: 5px;
         }
 
         input[type="text"], select {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #0f0b0b;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            margin-bottom: 20px;
-            
         }
 
         textarea {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #110e0e;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
             border-radius: 5px;
             resize: none;
-            margin-bottom: 20px;
         }
 
         button[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #007BFF;
-            /* background:linear-gradient(180deg,#c3ff00,#749b91,#7a4158); */
-            color: #fff;
+            background-color: #4CAF50;
+            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
         }
 
         button[type="submit"]:hover {
-            background-color: #5f00b3;
+            background-color: #45a049;
         }
-
-        @keyframes animate {
-            0% {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .container {
-            animation: animate 1s ease-in-out;
-        }
-
- 
         .sidebar{
     position: fixed;
     top: 0;
@@ -159,12 +128,9 @@ active{
     left: 0;
     width: 100%;}
 
-
     </style>
 </head>
 <body>
-
-
     <div class="sidebar">
         <div class="logo"></div>
         <ul class="menu">
@@ -219,22 +185,30 @@ active{
                     </li>
         </ul>
         </div>
-    
+
     <div class="container">
-        <h1>Report an Issue</h1>
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <h1>Request a Book</h1>
+        <form action="/submit-request" method="post">
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" name="title" required>
 
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
 
-            <label for="issue">Issue:</label>
-            <textarea id="issue" name="issue" rows="5" required></textarea>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="computer Science">computer Science</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="java">core java</option>
+                <option value="c#">c#</option>
+                <option value="c language">C language</option>
+            </select>
 
-            <button type="submit">Submit</button>
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+
+            <button type="submit">Submit Request</button>
         </form>
     </div>
-    
 </body>
 </html>

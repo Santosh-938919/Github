@@ -5,9 +5,9 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    overflow: auto;
-    background:linear-gradient(35deg,rgba(255,255,255,0.1),rgba(255,255,255,0),rgba(255,200,255,0));;
-    
+    /* overflow: auto; */
+   background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_614205688_2000122118188430300_190241.jpg")
+   
     
     
 

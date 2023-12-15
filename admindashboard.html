@@ -6,110 +6,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<style>
     
-    <style>
-
-        body{
-            background:linear-gradient(90deg,#d9decb,#756190,#3ad912); ;
-        }
 
 
-        .navbar {
-            background-color: #d4a1a1;
-          
-            font-weight:bolder;
-            
-            
-        }
 
-        .navbar .navbar-brand {
-            color: #5c2121;
-            font-weight:bolder;
-            text-decoration: underline;
-        
-        }
 
-        .navbar .navbar-brand:hover {
-            color: #866464;
-            
-        }
 
-        .navbar .navbar-toggler {
-            border-color: #643131;
-            
-        }
 
-        .navbar .navbar-toggler:focus {
-            border-color: #fff;
-        }
 
-        .navbar .navbar-toggler .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path d='M4 8h24M4 16h24M4 24h24' stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round'/></svg>");
-        }
 
-        .navbar .navbar-nav .nav-item .nav-link {
-            color: #2e2a2a;
-            padding: 2.3rem;
-            margin: 0.25rem;
-            border: #0b100a;
-            border-radius: 10px;
-            b
-        }
 
-        .navbar .navbar-nav .nav-item .nav-link:hover {
-            color: #360b8d;
-            
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Admin Dashboard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="admin.html">Add Books</a>
+
+/* import kya ha google font cdn link*/
+@import url("http://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap");
+*{
+margin: 0;
+padding:0;
+border: none;
+outline: none;
+box-sizing: border-box;
+font-family: "poppins",sans-serif;
+
+
+}
+body{
+    display: flex;
+    background-image: url("https://www.wipremiertrivia.com/wp-content/uploads/2019/07/Books-Wallpaper.jpg");
+    justify-content: center;
+
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100vh;
+    padding: 0.17rem;
+    color:#fff ;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,186,255);
+    /* content-visibility:hidden; */
+    align-items: center;
+    justify-content: center;
+}
+.sidebar:hover{
+    width: 180px;
+    transition: 0.1s;
+
+    /* content-visibility:visible; */
+    
+}
+    
+
+
+
+.logo{
+    height:80 ;
+    padding: 16px;
+}
+.menu{
+    height:88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding:1rem;
+    margin:8px 0;
+    border-radius: all 0.5s ease-in-out;
+
+}
+.menu li:hover,
+active{
+    background: #e0e0e058;
+}
+.menu a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.menu a span{
+    overflow:hidden;
+
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* main body section****/
+.main--content{
+    position: relative;
+    background:#ebe9e9;
+    width: 100%;
+    padding: 1rem;   
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;}
+ .header--wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;   
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 2rm;
+    margin-bottom: 1rem;
+ }
+ .header--title
+ {
+    color: rgba(113,99,186,255);
+
+ }
+ .user--info
+ {
+    display:flex;
+    align-items:center;
+    gap:1rem;
+ }
+ .search--box
+ {
+    background: rgb(236,236,236);
+    border-radius: 15px;
+    color: rgba(113,99,186,255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+ }
+ .search--box input{
+    background: transparent;
+    padding: 10px;
+ }
+ .search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+ }
+ .search--box inline-size: hover{
+transform: scale(1.2);
+ }
+ /* card container*/
+
+ .dashboard {
+    background-color: #b5adc9;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+
+.dashboard-section {
+    background-color: #e6d3d3;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard-section h2 {
+    margin-bottom: 20px;
+}
+
+.dashboard-section p {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ </style>
+<head>
+    <body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+  <li class="active">
+  <a href="admindashboard.html">
+  <i class="fa fa-tachometer"></i>
+  <span>Admin Dashboard</span>
+  </a>
+  </li>
+  <li>
+    <a href="addstudent.html">
+    <i class="fa fa-user"></i>
+    <span>Add Student</span>
+    </a>
+    </li>
+    <li>
+        <a href="issuebookadmin.html">
+        <i class="fa fa-book"></i>
+        <span>Issue book</span>
+        </a>
+        </li>
+  
+        <li>
+            <a href="admin.html">  
+            <i class="fa fa-book"></i>
+            <span>Add Book</span>
+            </a>
+            </li>
+            <li>
+                <a href="issuereportadmin.html">
+                <i class="fa fa-book"></i>
+                <span>Book report</span>
+                </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="addstudent.html">Add Student</a>
+        <li>
+            <a href="bookrequestadmin.html">
+         <i class="fa fa-book" aria-hidden="true"></i>
+            <span>Book Request</span>
+            </a>
+            </li>
+            <li>
+                <a href="adminsetting.html">
+                <i class="fa fa-cog"></i>
+                <span>setting</span>
+                </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="issuebookadmin.html">Issue Book</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="issuereportadmin.html">Student Report</a>
-                </li>
-
-
-                <li class="nav-item">
-                    <a class="nav-link" href="">Book Request</a>
-                </li>
+                <li class="logout">
+                    <a href="#">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
+                    </a>
+                    </li>
+        </ul>
+    </div>
 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="issuereportadmin.html">Student Report</a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="login page.html">logout</a>
-                </li>
 
-            </ul>
-        </div>
-    </nav>
+</ul>
+</div>
+<div class="main--content">
+<div class="header--wrapper">
+<div class="header--title">
+    <span>Admin</span>
+    <h2>Dashboard</h2>
+</div>
 
-    <!-- Add your other content here -->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<div class="user--info">
+    <div class="search--box"></div>
+    <i class="fa fa-solid fa-search"></i>
+    <input type="text"placeholder="search" />
+</div>
 </body>
 </html> 
-
 
 
 
